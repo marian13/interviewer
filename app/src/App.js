@@ -5,6 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 
+import Highlight from 'react-highlight.js'
+
 const App = () => {
   return (
     <Container>
@@ -36,6 +38,28 @@ const App = () => {
                   Expected result:
                   <br />
                   <code>[1, 3, 5]</code>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  Answer
+                </td>
+
+                <td>
+                  <Highlight language="language-ruby">
+                    {[
+                      'arr.select { |x| !x.even? } # or',
+                      'arr.select { |x| x.odd? }'
+                    ].join('\n')}
+                  </Highlight>
+
+                  <a href="https://ruby-doc.org/core-3.0.0/Array.html#method-i-filter" target="_blank">filter</a>
+                  {", or "}
+                  <a href="https://ruby-doc.org/core-3.0.0/Array.html#method-i-delete_if" target="_blank">delete_if</a>
+                  {", or "}
+                  <a href="https://ruby-doc.org/core-3.0.0/Array.html#method-i-reject" target="_blank">reject</a>
+                  .
                 </td>
               </tr>
             </tbody>
