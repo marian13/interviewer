@@ -1,11 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.css';
-
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 
-import Highlight from 'react-highlight.js'
+import Highlight from 'react-highlight';
 
 const App = () => {
   return (
@@ -47,7 +45,7 @@ const App = () => {
                 </td>
 
                 <td>
-                  <Highlight language="language-ruby">
+                  <Highlight className="language-ruby">
                     {[
                       'arr.select { |x| !x.even? } # or',
                       'arr.select { |x| x.odd? }'
