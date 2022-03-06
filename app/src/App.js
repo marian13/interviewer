@@ -12,6 +12,7 @@ const App = () => (
 
         <Questions.RemoveEvenIntegersFromArrayInRuby />
         <Questions.ProtectedInRuby />
+        <Questions.RubyBlockShorthand />
       </Col>
     </Row>
   </Container>
