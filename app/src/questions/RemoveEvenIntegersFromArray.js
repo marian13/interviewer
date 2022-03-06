@@ -96,6 +96,8 @@ const RemoveEvenIntegersFromArray = () => (
     )}
 
     keywords={['select', 'filter', 'delete_if', 'reject', 'even', 'odd', 'modulo of 2']}
+
+    topics={['Ruby Core']}
   />
 );
 
