@@ -16,4 +16,4 @@ AnswerRow.propTypes = {
   renderContent: PropTypes.func.isRequired
 }
 
-export default AnswerRow
+export default AnswerRow;

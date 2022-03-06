@@ -4,18 +4,16 @@ import Row from 'react-bootstrap/Row';
 
 import Questions from './questions';
 
-const App = () => {
-  return (
-    <Container>
-      <Row className="mx-0">
-        <Col xs={6}>
-          <h1>Ruby</h1>
+const App = () => (
+  <Container>
+    <Row className="mx-0">
+      <Col xs={6}>
+        <h1>Ruby</h1>
 
-          <Questions.RemoveEvenIntegersFromArray />
-        </Col>
-      </Row>
-    </Container>
-  );
-}
+        <Questions.RemoveEvenIntegersFromArray />
+      </Col>
+    </Row>
+  </Container>
+);
 
 export default App;

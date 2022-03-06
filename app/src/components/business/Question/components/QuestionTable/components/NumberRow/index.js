@@ -11,4 +11,4 @@ NumberRow.propTypes = {
   renderContent: PropTypes.func.isRequired
 }
 
-export default NumberRow
+export default NumberRow;

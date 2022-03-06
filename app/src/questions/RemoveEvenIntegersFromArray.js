@@ -94,6 +94,8 @@ const RemoveEvenIntegersFromArray = () => (
         It is worth asking what the candidate will do with <code>nil</code> values afterward (<Link path="https://ruby-doc.org/core-3.0.0/Array.html#method-i-compact" text="compact" />).
       </>
     )}
+
+    keywords={['select', 'filter', 'delete_if', 'reject', 'even', 'odd', 'modulo of 2']}
   />
 );
 
