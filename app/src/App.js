@@ -10,7 +10,7 @@ const App = () => (
       <Col xs={6}>
         <h1>Ruby</h1>
 
-        <Questions.RemoveEvenIntegersFromArray />
+        <Questions.RemoveEvenIntegersFromArrayInRuby />
       </Col>
     </Row>
   </Container>

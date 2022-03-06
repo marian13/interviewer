@@ -1,7 +1,7 @@
-import RemoveEvenIntegersFromArray from './RemoveEvenIntegersFromArray';
+import RemoveEvenIntegersFromArrayInRuby from './RemoveEvenIntegersFromArrayInRuby';
 
 const Questions = {
-  RemoveEvenIntegersFromArray
+  RemoveEvenIntegersFromArrayInRuby
 };
 
 export default Questions;

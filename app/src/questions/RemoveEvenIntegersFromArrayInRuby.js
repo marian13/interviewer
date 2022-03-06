@@ -4,7 +4,7 @@ import Code from '../components/generic/Code';
 import NewLine from '../components/generic/NewLine';
 import Link from '../components/generic/Link';
 
-const RemoveEvenIntegersFromArray = () => (
+const RemoveEvenIntegersFromArrayInRuby = () => (
   <Question
     renderNumberContent={() => 1}
 
@@ -101,4 +101,4 @@ const RemoveEvenIntegersFromArray = () => (
   />
 );
 
-export default RemoveEvenIntegersFromArray;
+export default RemoveEvenIntegersFromArrayInRuby;
