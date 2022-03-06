@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import PropTypes from 'prop-types';
 
-import Badge from 'react-bootstrap/Badge';
+import Keyword from './components/Keyword';
 
 const KeywordsRow = ({ keywords }) => (
   <tr>
@@ -13,9 +13,7 @@ const KeywordsRow = ({ keywords }) => (
     <td>
       {keywords.map(keyword => (
         <Fragment key={keyword}>
-          <Badge pill bg="primary" text="light">
-            {keyword}
-          </Badge>
+          <Keyword keyword={keyword} />
           {' '}
         </Fragment>
       ))}
