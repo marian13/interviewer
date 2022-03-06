@@ -7,13 +7,15 @@ import QuestionRow from './components/QuestionRow';
 import AnswerRow from './components/AnswerRow';
 import KeywordsRow from './components/KeywordsRow';
 import TopicsRow from './components/TopicsRow';
+import SourcesRow from './components/SourcesRow';
 
 const QuestionTable = ({
+  keywords,
+  topics,
   renderNumberContent,
   renderQuestionContent,
   renderAnswerContent,
-  keywords,
-  topics
+  renderSourcesContent
 }) => (
   <Table striped bordered hover>
     <tbody>
@@ -22,24 +24,26 @@ const QuestionTable = ({
       {renderAnswerContent && <AnswerRow renderContent={renderAnswerContent} />}
       {keywords && <KeywordsRow keywords={keywords} />}
       {topics && <TopicsRow topics={topics} />}
+      {renderSourcesContent && <SourcesRow renderContent={renderSourcesContent} />}
     </tbody>
   </Table>
 );
 
 QuestionTable.propTypes = {
-  renderNumberContent: PropTypes.func,
-  renderQuestionContent: PropTypes.func,
-  renderAnswerContent: PropTypes.func,
   keywords: PropTypes.array,
-  topics: PropTypes.array
+  topics: PropTypes.array,
+  renderAnswerContent: PropTypes.func,
+  renderQuestionContent: PropTypes.func,
+  renderNumberContent: PropTypes.func,
 }
 
 QuestionTable.defaultProps = {
-  renderNumberContent: null,
-  renderQuestionContent: null,
-  renderAnswerContent: null,
   keywords: null,
-  topics: null
+  topics: null,
+  renderAnswerContent: null,
+  renderQuestionContent: null,
+  renderNumberContent: null,
+  renderSourcesContent: null
 }
 
 export default QuestionTable;
