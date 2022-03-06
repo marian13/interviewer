@@ -6,7 +6,7 @@ import Link from '../components/generic/Link';
 
 const RubyBlockShorthand = () => (
   <Question
-    renderNumberContent={() => 3}
+    renderNumberContent={() => 4}
 
     renderQuestionContent={() => (
       <>

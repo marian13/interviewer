@@ -12,6 +12,7 @@ const App = () => (
 
         <Questions.RemoveEvenIntegersFromArrayInRuby />
         <Questions.ProtectedInRuby />
+        <Questions.FindObjectsInRubyExpression />
         <Questions.RubyBlockShorthand />
         <Questions.CompareCustomRubyObjects />
       </Col>
