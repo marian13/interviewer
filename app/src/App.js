@@ -11,6 +11,7 @@ const App = () => (
         <h1>Ruby</h1>
 
         <Questions.RemoveEvenIntegersFromArrayInRuby />
+        <Questions.ProtectedInRuby />
       </Col>
     </Row>
   </Container>
