@@ -2,7 +2,7 @@ import Question from '../components/business/Question';
 
 import NewLine from '../components/generic/NewLine';
 
-const RemoveEvenIntegersFromArrayInRuby = () => (
+const ProtectedInRuby = () => (
   <Question
     renderNumberContent={() => 2}
 
@@ -18,4 +18,4 @@ const RemoveEvenIntegersFromArrayInRuby = () => (
   />
 );
 
-export default RemoveEvenIntegersFromArrayInRuby;
+export default ProtectedInRuby;

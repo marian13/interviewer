@@ -10,11 +10,7 @@ const App = () => (
       <Col xs={6}>
         <h1>Ruby</h1>
 
-        <Questions.RemoveEvenIntegersFromArrayInRuby />
-        <Questions.ProtectedInRuby />
-        <Questions.FindObjectsInRubyExpression />
-        <Questions.RubyBlockShorthand />
-        <Questions.CompareCustomRubyObjects />
+        {Questions.map(Question => <Question key={Question.name} />)}
       </Col>
     </Row>
   </Container>

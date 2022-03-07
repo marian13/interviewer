@@ -1,15 +1,16 @@
-import CompareCustomRubyObjects from './CompareCustomRubyObjects';
-import ProtectedInRuby from './ProtectedInRuby';
-import RemoveEvenIntegersFromArrayInRuby from './RemoveEvenIntegersFromArrayInRuby';
-import RubyBlockShorthand from './RubyBlockShorthand';
-import FindObjectsInRubyExpression from './FindObjectsInRubyExpression';
+/*
+ * Automatically imports all files in the current folder, except `index.js'.
+ * https://webpack.js.org/guides/dependency-management/#requirecontext
+ *
+ * Copied without any modification from:
+ * https://stackoverflow.com/questions/55211360/webpack-importing-all-files-and-exporting-it-as-an-arrayhttps://stackoverflow.com/questions/55211360/webpack-importing-all-files-and-exporting-it-as-an-array
+ */
+const context = require.context('.', true, /^\.\/(?!index\.js).*\.js$/, 'sync');
 
-const Questions = {
-  CompareCustomRubyObjects,
-  ProtectedInRuby,
-  RemoveEvenIntegersFromArrayInRuby,
-  RubyBlockShorthand,
-  FindObjectsInRubyExpression
-};
+let resolvers = [];
 
-export default Questions;
+context.keys().forEach(module => {
+  resolvers.push(context(module).default)
+});
+
+export default resolvers
