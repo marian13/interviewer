@@ -11,6 +11,7 @@ import SourcesRow from './components/SourcesRow';
 
 const QuestionTable = ({
   keywords,
+  sources,
   topics,
   renderNumberContent,
   renderQuestionContent,
@@ -24,13 +25,14 @@ const QuestionTable = ({
       {renderAnswerContent && <AnswerRow renderContent={renderAnswerContent} />}
       {keywords && <KeywordsRow keywords={keywords} />}
       {topics && <TopicsRow topics={topics} />}
-      {renderSourcesContent && <SourcesRow renderContent={renderSourcesContent} />}
+      {(sources || renderSourcesContent) && <SourcesRow sources={sources} renderSourcesContent={renderSourcesContent} />}
     </tbody>
   </Table>
 );
 
 QuestionTable.propTypes = {
   keywords: PropTypes.array,
+  sources: PropTypes.array,
   topics: PropTypes.array,
   renderAnswerContent: PropTypes.func,
   renderQuestionContent: PropTypes.func,
@@ -39,6 +41,7 @@ QuestionTable.propTypes = {
 
 QuestionTable.defaultProps = {
   keywords: null,
+  sources: null,
   topics: null,
   renderAnswerContent: null,
   renderQuestionContent: null,

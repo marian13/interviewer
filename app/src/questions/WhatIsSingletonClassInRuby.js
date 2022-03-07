@@ -2,7 +2,6 @@ import Question from '../components/business/Question';
 import withQuestionProps from '../utils/business/withQuestionProps';
 
 import NewLine from '../components/generic/NewLine';
-import Link from '../components/generic/Link';
 
 const WhatIsSingletonClassInRuby = ({ number }) => (
   <Question
@@ -28,15 +27,12 @@ const WhatIsSingletonClassInRuby = ({ number }) => (
 
     keywords={['classes', 'object', 'method lookup', 'metaclass', 'metaprogramming']}
 
-    renderSourcesContent={() => (
-      <>
-        <ul>
-          <li>
-            <Link path="https://medium.com/@leo_hetsch/demystifying-singleton-classes-in-ruby-caf3fa4c9d91" text="Diving into Ruby Singleton Classes." />
-          </li>
-        </ul>
-      </>
-    )}
+    sources={[
+      {
+        path: "https://medium.com/@leo_hetsch/demystifying-singleton-classes-in-ruby-caf3fa4c9d91",
+        text: "Diving into Ruby Singleton Classes."
+      }
+    ]}
 
     topics={['Ruby Core']}
   />

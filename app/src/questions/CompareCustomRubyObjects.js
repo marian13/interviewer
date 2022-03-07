@@ -27,19 +27,16 @@ const CompareCustomRubyObjects = ({ number }) => (
       </>
     )}
 
-    renderSourcesContent={() => (
-      <>
-        <ul>
-          <li>
-            <Link path="https://ruby-doc.org/core-3.0.0/Comparable.html" text="Comparable mixin." />
-          </li>
-
-          <li>
-            <Link path="https://dev.to/jblengino510/the-spaceship-operator-in-ruby-2fmk" text="Spaceship operator." />
-          </li>
-        </ul>
-      </>
-    )}
+    sources={[
+      {
+        path: "https://ruby-doc.org/core-3.0.0/Comparable.html",
+        text: "Comparable mixin."
+      },
+      {
+        path: "https://dev.to/jblengino510/the-spaceship-operator-in-ruby-2fmk",
+        text: "Spaceship operator."
+      }
+    ]}
 
     topics={['Ruby Core']}
   />
