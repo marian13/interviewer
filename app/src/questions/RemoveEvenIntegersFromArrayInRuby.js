@@ -1,12 +1,13 @@
 import Question from '../components/business/Question';
+import withQuestionProps from '../utils/business/withQuestionProps';
 
 import Code from '../components/generic/Code';
 import NewLine from '../components/generic/NewLine';
 import Link from '../components/generic/Link';
 
-const RemoveEvenIntegersFromArrayInRuby = () => (
+const RemoveEvenIntegersFromArrayInRuby = ({ number }) => (
   <Question
-    renderNumberContent={() => 1}
+    renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
@@ -101,4 +102,4 @@ const RemoveEvenIntegersFromArrayInRuby = () => (
   />
 );
 
-export default RemoveEvenIntegersFromArrayInRuby;
+export default withQuestionProps({ number: 1 }, RemoveEvenIntegersFromArrayInRuby);

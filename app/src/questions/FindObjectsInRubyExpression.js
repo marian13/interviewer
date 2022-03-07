@@ -1,11 +1,12 @@
 import Question from '../components/business/Question';
+import withQuestionProps from '../utils/business/withQuestionProps';
 
 import Code from '../components/generic/Code';
 import NewLine from '../components/generic/NewLine';
 
-const FindObjectsInRubyExpression = () => (
+const FindObjectsInRubyExpression = ({ number }) => (
   <Question
-    renderNumberContent={() => 3}
+    renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
@@ -32,4 +33,4 @@ const FindObjectsInRubyExpression = () => (
   />
 );
 
-export default FindObjectsInRubyExpression;
+export default withQuestionProps({ number: 3 }, FindObjectsInRubyExpression);

@@ -1,12 +1,13 @@
 import Question from '../components/business/Question';
+import withQuestionProps from '../utils/business/withQuestionProps';
 
 import Code from '../components/generic/Code';
 import NewLine from '../components/generic/NewLine';
 import Link from '../components/generic/Link';
 
-const CompareCustomRubyObjects = () => (
+const CompareCustomRubyObjects = ({ number }) => (
   <Question
-    renderNumberContent={() => 5}
+    renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
@@ -42,4 +43,4 @@ const CompareCustomRubyObjects = () => (
   />
 );
 
-export default CompareCustomRubyObjects;
+export default withQuestionProps({ number: 5 }, CompareCustomRubyObjects);

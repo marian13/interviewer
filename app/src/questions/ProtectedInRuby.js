@@ -1,10 +1,11 @@
 import Question from '../components/business/Question';
+import withQuestionProps from '../utils/business/withQuestionProps';
 
 import NewLine from '../components/generic/NewLine';
 
-const ProtectedInRuby = () => (
+const ProtectedInRuby = ({ number }) => (
   <Question
-    renderNumberContent={() => 2}
+    renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
@@ -18,4 +19,4 @@ const ProtectedInRuby = () => (
   />
 );
 
-export default ProtectedInRuby;
+export default withQuestionProps({ number: 2 }, ProtectedInRuby);

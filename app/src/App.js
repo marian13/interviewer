@@ -1,8 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-
 import Questions from './questions';
+
+import sortBy from 'lodash/sortBy';
 
 const App = () => (
   <Container>
@@ -10,7 +11,7 @@ const App = () => (
       <Col xs={6}>
         <h1>Ruby</h1>
 
-        {Questions.map(Question => <Question key={Question.name} />)}
+        {sortBy(Questions, 'number').map(Question => <Question key={Question.displayName} />)}
       </Col>
     </Row>
   </Container>
