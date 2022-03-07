@@ -39,6 +39,8 @@ const RubyBlockShorthand = ({ number }) => (
         </ul>
       </>
     )}
+
+    topics={['Ruby Core']}
   />
 );
 

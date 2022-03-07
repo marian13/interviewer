@@ -37,6 +37,8 @@ const WhatIsSingletonClassInRuby = ({ number }) => (
         </ul>
       </>
     )}
+
+    topics={['Ruby Core']}
   />
 );
 

@@ -30,6 +30,8 @@ const FindObjectsInRubyExpression = ({ number }) => (
         Where is the division operator (<code>/</code>) defined?
       </>
     )}
+
+    topics={['Ruby Core']}
   />
 );
 

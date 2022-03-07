@@ -16,6 +16,8 @@ const ProtectedInRuby = ({ number }) => (
         How different it is from <code>private</code>?
       </>
     )}
+
+    topics={['Ruby Core']}
   />
 );
 

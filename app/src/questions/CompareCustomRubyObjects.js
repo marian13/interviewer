@@ -40,6 +40,8 @@ const CompareCustomRubyObjects = ({ number }) => (
         </ul>
       </>
     )}
+
+    topics={['Ruby Core']}
   />
 );
 
