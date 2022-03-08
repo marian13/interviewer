@@ -9,7 +9,8 @@ import slice from 'lodash/slice';
 const SortedQuestions = sortBy(Questions, 'number');
 
 const RubyCoreQuestions = slice(SortedQuestions, 0, 22);
-const RailsQuestions = slice(SortedQuestions, 22);
+const RailsQuestions = slice(SortedQuestions, 22, 37);
+const RubyToolsQuestions = slice(SortedQuestions, 37);
 
 const renderQuestions = ({ Questions }) => Questions.map(Question => <Question key={Question.displayName} />);
 
@@ -24,6 +25,10 @@ const App = () => (
         <h1>Rails</h1>
 
         {renderQuestions({ Questions: RailsQuestions })}
+
+        <h1>Ruby Tools</h1>
+
+        {renderQuestions({ Questions: RubyToolsQuestions })}
       </Col>
     </Row>
   </Container>
