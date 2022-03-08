@@ -1,21 +1,18 @@
 import Question from '../components/business/Question';
 import withQuestionProps from '../utils/business/withQuestionProps';
 
-const CucumberStepDefinitions = ({ number }) => (
+const Overnormalization = ({ number }) => (
   <Question
     renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
-        How does Cucumber look for step definitions?
+        Why database over-normalization is bad?
       </>
     )}
 
-    topics={[
-      'Cucumber',
-      'Automated Tests'
-    ]}
+    topics={['Databases']}
   />
 );
 
-export default withQuestionProps({ number: 54 }, CucumberStepDefinitions);
+export default withQuestionProps({ number: 55 }, Overnormalization);

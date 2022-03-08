@@ -23,7 +23,8 @@ const RubyCoreQuestions = takeQuestions(SortedQuestions, { from: 0, to: 22 });
 const RailsQuestions = takeQuestions(SortedQuestions, { from: 22, to: 37 });
 const RubyToolsQuestions = takeQuestions(SortedQuestions, { from: 37, to: 46 });
 const RSpecQuestions = takeQuestions(SortedQuestions, { from: 46, to: 53 });
-const CucumberQuestions = takeQuestions(SortedQuestions, { from: 53, to: Infinity });
+const CucumberQuestions = takeQuestions(SortedQuestions, { from: 53, to: 54 });
+const DatabaseQuestions = takeQuestions(SortedQuestions, { from: 54, to: Infinity });
 
 const App = () => (
   <Container>
@@ -48,6 +49,10 @@ const App = () => (
         <h1>Cucumber/Capybara (Automated Tests)</h1>
 
         {renderQuestions({ Questions: CucumberQuestions })}
+
+        <h1>Databases</h1>
+
+        {renderQuestions({ Questions: DatabaseQuestions })}
       </Col>
     </Row>
   </Container>
