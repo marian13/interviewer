@@ -2,13 +2,13 @@
 import Question from '../components/business/Question';
 import withQuestionProps from '../utils/business/withQuestionProps';
 
-const Capistrano = ({ number }) => (
+const HowToPassParamsToRakeTasks = ({ number }) => (
   <Question
     renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
-        What is Сapistrano?
+        How to pass params to a rake task?
       </>
     )}
 
@@ -16,4 +16,4 @@ const Capistrano = ({ number }) => (
   />
 );
 
-export default withQuestionProps({ number: 39 }, Capistrano);
+export default withQuestionProps({ number: 40 }, HowToPassParamsToRakeTasks);
