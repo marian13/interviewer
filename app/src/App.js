@@ -4,16 +4,26 @@ import Row from 'react-bootstrap/Row';
 import Questions from './questions';
 
 import sortBy from 'lodash/sortBy';
-import slice from 'lodash/slice';
+import dropWhile from 'lodash/dropWhile';
+import takeWhile from 'lodash/takeWhile';
 
-const SortedQuestions = sortBy(Questions, 'number');
+const takeQuestions = (SortedQuestions, { from = 0, to = Infinity } = {}) => {
+  let Questions = SortedQuestions
 
-const RubyCoreQuestions = slice(SortedQuestions, 0, 22);
-const RailsQuestions = slice(SortedQuestions, 22, 37);
-const RubyToolsQuestions = slice(SortedQuestions, 37, 46);
-const RSpecQuestions = slice(SortedQuestions, 46);
+  Questions = dropWhile(Questions, Question => Question.number <= from)
+  Questions = takeWhile(Questions, Question => Question.number <= to)
+
+  return Questions;
+}
 
 const renderQuestions = ({ Questions }) => Questions.map(Question => <Question key={Question.displayName} />);
+
+const SortedQuestions = sortBy(Questions, 'number');
+const RubyCoreQuestions = takeQuestions(SortedQuestions, { from: 0, to: 22 });
+const RailsQuestions = takeQuestions(SortedQuestions, { from: 22, to: 37 });
+const RubyToolsQuestions = takeQuestions(SortedQuestions, { from: 37, to: 46 });
+const RSpecQuestions = takeQuestions(SortedQuestions, { from: 46, to: 53 });
+const CucumberQuestions = takeQuestions(SortedQuestions, { from: 53, to: Infinity });
 
 const App = () => (
   <Container>
@@ -31,9 +41,13 @@ const App = () => (
 
         {renderQuestions({ Questions: RubyToolsQuestions })}
 
-        <h1>RSpec</h1>
+        <h1>RSpec (Unit Tests)</h1>
 
         {renderQuestions({ Questions: RSpecQuestions })}
+
+        <h1>Cucumber/Capybara (Automated Tests)</h1>
+
+        {renderQuestions({ Questions: CucumberQuestions })}
       </Col>
     </Row>
   </Container>
