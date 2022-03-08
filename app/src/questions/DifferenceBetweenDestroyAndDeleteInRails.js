@@ -11,6 +11,8 @@ const DifferenceBetweenDestroyAndDeleteInRails = ({ number }) => (
         What is the difference between the <code>destroy</code> and <code>delete</code> methods in Rails?
       </>
     )}
+
+    topics={['Rails']}
   />
 );
 

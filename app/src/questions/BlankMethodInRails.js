@@ -10,6 +10,8 @@ const BlankMethodInRails = ({ number }) => (
         Could you name cases when <code>blank?</code> method return true in Rails?
       </>
     )}
+
+    topics={['Rails']}
   />
 );
 

@@ -10,6 +10,8 @@ const RubyCoercion = ({ number }) => (
         Ruby Coercion
       </>
     )}
+
+    topics={['Ruby Core']}
   />
 );
 

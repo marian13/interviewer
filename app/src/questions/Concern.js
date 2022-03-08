@@ -1,18 +1,18 @@
 import Question from '../components/business/Question';
 import withQuestionProps from '../utils/business/withQuestionProps';
 
-const Refinement = ({ number }) => (
+const Concern = ({ number }) => (
   <Question
     renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
-        Refinement
+        What is a <code>Concern</code> in Rails?
       </>
     )}
 
-    topics={['Ruby Core']}
+    topics={['Rails']}
   />
 );
 
-export default withQuestionProps({ number: 22 }, Refinement);
+export default withQuestionProps({ number: 26 }, Concern);

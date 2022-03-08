@@ -10,6 +10,8 @@ const Reflection = ({ number }) => (
         Reflection
       </>
     )}
+
+    topics={['Ruby Core']}
   />
 );
 

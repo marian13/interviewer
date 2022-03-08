@@ -10,6 +10,8 @@ const Serializer = ({ number }) => (
         What is <code>Serializer</code>?
       </>
     )}
+
+    topics={['Rails', 'Backend Development']}
   />
 );
 
