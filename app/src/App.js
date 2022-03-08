@@ -10,8 +10,8 @@ const SortedQuestions = sortBy(Questions, 'number');
 
 const RubyCoreQuestions = slice(SortedQuestions, 0, 22);
 const RailsQuestions = slice(SortedQuestions, 22, 37);
-const RubyToolsQuestions = slice(SortedQuestions, 37, 47);
-const RSpecQuestions = slice(SortedQuestions, 47);
+const RubyToolsQuestions = slice(SortedQuestions, 37, 46);
+const RSpecQuestions = slice(SortedQuestions, 46);
 
 const renderQuestions = ({ Questions }) => Questions.map(Question => <Question key={Question.displayName} />);
 
