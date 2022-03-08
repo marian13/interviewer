@@ -11,7 +11,7 @@ const UniquenessByTwoColumnsInRails = ({ number }) => (
       </>
     )}
 
-    topics={['Rails', 'Databases']}
+    topics={['Rails', 'Backend Development', 'Databases']}
   />
 );
 
