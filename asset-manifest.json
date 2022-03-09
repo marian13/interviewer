@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.c7c307a0.js",
-    "index.html": "/index.html",
-    "main.c7c307a0.js.map": "/static/js/main.c7c307a0.js.map"
+    "main.js": "/interviewer/static/js/main.c7c307a0.js",
+    "index.html": "/interviewer/index.html",
+    "main.c7c307a0.js.map": "/interviewer/static/js/main.c7c307a0.js.map"
   },
   "entrypoints": [
     "static/js/main.c7c307a0.js"
