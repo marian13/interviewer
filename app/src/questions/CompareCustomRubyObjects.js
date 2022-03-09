@@ -3,7 +3,6 @@ import withQuestionProps from '../utils/business/withQuestionProps';
 
 import Code from '../components/generic/Code';
 import NewLine from '../components/generic/NewLine';
-import Link from '../components/generic/Link';
 
 const CompareCustomRubyObjects = ({ number }) => (
   <Question
