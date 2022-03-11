@@ -22,6 +22,8 @@ yarn install
 yarn start
 ```
 
+Open [http://localhost:3000](http://localhost:3000).
+
 ## Production
 
 Every push to the `main` branch automatically deploys `yarn build` to the GitHub Pages located in [https://marian13.github.io/interviewer](https://marian13.github.io/interviewer).
