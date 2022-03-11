@@ -26,7 +26,8 @@ const RubyToolsQuestions = takeQuestions(SortedQuestions, { from: 37, to: 46 });
 const RSpecQuestions = takeQuestions(SortedQuestions, { from: 46, to: 53 });
 const CucumberQuestions = takeQuestions(SortedQuestions, { from: 53, to: 54 });
 const DatabaseQuestions = takeQuestions(SortedQuestions, { from: 54, to: 62 });
-const JavaScriptQuestions = takeQuestions(SortedQuestions, { from: 62, to: Infinity });
+const JavaScriptQuestions = takeQuestions(SortedQuestions, { from: 62, to: 69 });
+const MultithreadingQuestions = takeQuestions(SortedQuestions, { from: 69, to: Infinity });
 
 const App = () => (
   <>
@@ -60,6 +61,10 @@ const App = () => (
           <h1>JavaScript</h1>
 
           {renderQuestions({ Questions: JavaScriptQuestions })}
+
+          <h1>Multithreading</h1>
+
+          {renderQuestions({ Questions: MultithreadingQuestions })}
         </Col>
       </Row>
     </Container>
