@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Questions from './questions';
+import FixedForkMeOnGithub from './components/generic/FixedForkMeOnGithub';
 
 import sortBy from 'lodash/sortBy';
 import dropWhile from 'lodash/dropWhile';
@@ -27,35 +28,39 @@ const CucumberQuestions = takeQuestions(SortedQuestions, { from: 53, to: 54 });
 const DatabaseQuestions = takeQuestions(SortedQuestions, { from: 54, to: Infinity });
 
 const App = () => (
-  <Container>
-    <Row className="mx-0">
-      <Col xs={6}>
-        <h1>Ruby Core</h1>
+  <>
+    <Container>
+      <Row className="mx-0">
+        <Col xs={6}>
+          <h1>Ruby Core</h1>
 
-        {renderQuestions({ Questions: RubyCoreQuestions })}
+          {renderQuestions({ Questions: RubyCoreQuestions })}
 
-        <h1>Rails</h1>
+          <h1>Rails</h1>
 
-        {renderQuestions({ Questions: RailsQuestions })}
+          {renderQuestions({ Questions: RailsQuestions })}
 
-        <h1>Ruby Tools</h1>
+          <h1>Ruby Tools</h1>
 
-        {renderQuestions({ Questions: RubyToolsQuestions })}
+          {renderQuestions({ Questions: RubyToolsQuestions })}
 
-        <h1>RSpec (Unit Tests)</h1>
+          <h1>RSpec (Unit Tests)</h1>
 
-        {renderQuestions({ Questions: RSpecQuestions })}
+          {renderQuestions({ Questions: RSpecQuestions })}
 
-        <h1>Cucumber/Capybara (Automated Tests)</h1>
+          <h1>Cucumber/Capybara (Automated Tests)</h1>
 
-        {renderQuestions({ Questions: CucumberQuestions })}
+          {renderQuestions({ Questions: CucumberQuestions })}
 
-        <h1>Databases</h1>
+          <h1>Databases</h1>
 
-        {renderQuestions({ Questions: DatabaseQuestions })}
-      </Col>
-    </Row>
-  </Container>
+          {renderQuestions({ Questions: DatabaseQuestions })}
+        </Col>
+      </Row>
+    </Container>
+
+    <FixedForkMeOnGithub />
+  </>
 );
 
 export default App;
