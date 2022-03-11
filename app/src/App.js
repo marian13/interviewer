@@ -25,7 +25,8 @@ const RailsQuestions = takeQuestions(SortedQuestions, { from: 22, to: 37 });
 const RubyToolsQuestions = takeQuestions(SortedQuestions, { from: 37, to: 46 });
 const RSpecQuestions = takeQuestions(SortedQuestions, { from: 46, to: 53 });
 const CucumberQuestions = takeQuestions(SortedQuestions, { from: 53, to: 54 });
-const DatabaseQuestions = takeQuestions(SortedQuestions, { from: 54, to: Infinity });
+const DatabaseQuestions = takeQuestions(SortedQuestions, { from: 54, to: 62 });
+const JavaScriptQuestions = takeQuestions(SortedQuestions, { from: 62, to: Infinity });
 
 const App = () => (
   <>
@@ -55,6 +56,10 @@ const App = () => (
           <h1>Databases</h1>
 
           {renderQuestions({ Questions: DatabaseQuestions })}
+
+          <h1>JavaScript</h1>
+
+          {renderQuestions({ Questions: JavaScriptQuestions })}
         </Col>
       </Row>
     </Container>
