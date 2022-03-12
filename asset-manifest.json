@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/interviewer/static/js/main.44f4b74e.js",
+    "main.js": "/interviewer/static/js/main.52145b77.js",
     "index.html": "/interviewer/index.html",
-    "main.44f4b74e.js.map": "/interviewer/static/js/main.44f4b74e.js.map"
+    "main.52145b77.js.map": "/interviewer/static/js/main.52145b77.js.map"
   },
   "entrypoints": [
-    "static/js/main.44f4b74e.js"
+    "static/js/main.52145b77.js"
   ]
 }
