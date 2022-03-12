@@ -28,7 +28,8 @@ const CucumberQuestions = takeQuestions(SortedQuestions, { from: 53, to: 54 });
 const DatabaseQuestions = takeQuestions(SortedQuestions, { from: 54, to: 62 });
 const JavaScriptQuestions = takeQuestions(SortedQuestions, { from: 62, to: 69 });
 const MultithreadingQuestions = takeQuestions(SortedQuestions, { from: 69, to: 74 });
-const WebQuestions = takeQuestions(SortedQuestions, { from: 74, to: Infinity });
+const WebQuestions = takeQuestions(SortedQuestions, { from: 74, to: 86 });
+const SecurityQuestions = takeQuestions(SortedQuestions, { from: 86, to: Infinity });
 
 const App = () => (
   <>
@@ -70,6 +71,10 @@ const App = () => (
           <h1>Web</h1>
 
           {renderQuestions({ Questions: WebQuestions })}
+
+          <h1>Security</h1>
+
+          {renderQuestions({ Questions: SecurityQuestions })}
         </Col>
       </Row>
     </Container>
