@@ -30,7 +30,8 @@ const JavaScriptQuestions = takeQuestions(SortedQuestions, { from: 62, to: 69 })
 const MultithreadingQuestions = takeQuestions(SortedQuestions, { from: 69, to: 74 });
 const WebQuestions = takeQuestions(SortedQuestions, { from: 74, to: 86 });
 const SecurityQuestions = takeQuestions(SortedQuestions, { from: 86, to: 92 });
-const PatternsQuestions = takeQuestions(SortedQuestions, { from: 92, to: Infinity });
+const PatternsQuestions = takeQuestions(SortedQuestions, { from: 92, to: 101 });
+const GitQuestions = takeQuestions(SortedQuestions, { from: 101, to: Infinity });
 
 const App = () => (
   <>
@@ -80,6 +81,10 @@ const App = () => (
           <h1>Patterns</h1>
 
           {renderQuestions({ Questions: PatternsQuestions })}
+
+          <h1>Git</h1>
+
+          {renderQuestions({ Questions: GitQuestions })}
         </Col>
       </Row>
     </Container>
