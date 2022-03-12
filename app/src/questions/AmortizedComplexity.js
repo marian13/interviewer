@@ -13,7 +13,7 @@ const AmortizedComplexity = ({ number }) => (
 
         <NewLine count={2} />
 
-        Why do we say that push has <code>O(1)</code> complexity, although that command makes more than one operation under the hood?
+        Why do we say that <code>push</code> command has <code>O(1)</code> complexity, although it makes more than one operation under the hood?
       </>
     )}
 

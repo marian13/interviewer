@@ -32,7 +32,8 @@ const WebQuestions = takeQuestions(SortedQuestions, { from: 74, to: 86 });
 const SecurityQuestions = takeQuestions(SortedQuestions, { from: 86, to: 92 });
 const PatternsQuestions = takeQuestions(SortedQuestions, { from: 92, to: 101 });
 const GitQuestions = takeQuestions(SortedQuestions, { from: 101, to: 102 });
-const AlgorithmsQuestions = takeQuestions(SortedQuestions, { from: 102, to: Infinity });
+const AlgorithmsQuestions = takeQuestions(SortedQuestions, { from: 102, to: 106 });
+const ManagementQuestions = takeQuestions(SortedQuestions, { from: 106, to: Infinity });
 
 const App = () => (
   <>
@@ -90,6 +91,10 @@ const App = () => (
           <h1>Algorithms</h1>
 
           {renderQuestions({ Questions: AlgorithmsQuestions })}
+
+          <h1>Management</h1>
+
+          {renderQuestions({ Questions: ManagementQuestions })}
         </Col>
       </Row>
     </Container>
