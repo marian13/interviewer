@@ -3,17 +3,17 @@ import withQuestionProps from '../utils/business/withQuestionProps';
 
 import NewLine from '../components/generic/NewLine';
 
-const CORS = ({ number }) => (
+const PatchPut = ({ number }) => (
   <Question
     renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
-        What is CORS?
+        HTTP Patch and Put?
 
         <NewLine count={2} />
 
-        How does a client know, that request is forbidden by the server?
+        What is the difference?
       </>
     )}
 
@@ -21,4 +21,4 @@ const CORS = ({ number }) => (
   />
 );
 
-export default withQuestionProps({ number: 82 }, CORS);
+export default withQuestionProps({ number: 83 }, PatchPut);

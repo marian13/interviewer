@@ -9,7 +9,7 @@ const OtherProtocols = ({ number }) => (
 
     renderQuestionContent={() => (
       <>
-        What types of protocol do you know, except HTTP?
+        What types of protocols do you know, except HTTP?
 
         <NewLine count={2} />
 
