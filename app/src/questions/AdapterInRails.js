@@ -1,13 +1,13 @@
 import Question from '../components/business/Question';
 import withQuestionProps from '../utils/business/withQuestionProps';
 
-const TypesOfGOFPatterns = ({ number }) => (
+const AdapterInRails = ({ number }) => (
   <Question
     renderNumberContent={() => number}
 
     renderQuestionContent={() => (
       <>
-        Please, name types of GOF patterns?
+        Adapter usage example in Rails?
       </>
     )}
 
@@ -15,4 +15,4 @@ const TypesOfGOFPatterns = ({ number }) => (
   />
 );
 
-export default withQuestionProps({ number: 98 }, TypesOfGOFPatterns);
+export default withQuestionProps({ number: 99 }, AdapterInRails);
