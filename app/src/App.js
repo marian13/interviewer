@@ -31,7 +31,8 @@ const MultithreadingQuestions = takeQuestions(SortedQuestions, { from: 69, to: 7
 const WebQuestions = takeQuestions(SortedQuestions, { from: 74, to: 86 });
 const SecurityQuestions = takeQuestions(SortedQuestions, { from: 86, to: 92 });
 const PatternsQuestions = takeQuestions(SortedQuestions, { from: 92, to: 101 });
-const GitQuestions = takeQuestions(SortedQuestions, { from: 101, to: Infinity });
+const GitQuestions = takeQuestions(SortedQuestions, { from: 101, to: 102 });
+const AlgorithmsQuestions = takeQuestions(SortedQuestions, { from: 102, to: Infinity });
 
 const App = () => (
   <>
@@ -85,6 +86,10 @@ const App = () => (
           <h1>Git</h1>
 
           {renderQuestions({ Questions: GitQuestions })}
+
+          <h1>Algorithms</h1>
+
+          {renderQuestions({ Questions: AlgorithmsQuestions })}
         </Col>
       </Row>
     </Container>
